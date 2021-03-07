@@ -48,9 +48,14 @@ avg({
 #Q3
 def maxProduct(nums):
     sort_nums=sorted(nums)
-    ans=sort_nums[-1]*sort_nums[-2]
-    print(ans)
-    return(ans)
+    ans1=sort_nums[0]*sort_nums[1]
+    ans2=sort_nums[-1]*sort_nums[-2]
+    if ans1 > ans2 :
+        print(ans1)
+        return(ans1)
+    else :
+        print(ans2)
+        return(ans2)
 
 maxProduct([5, 20, 2, 6])
 maxProduct([10, -20, 0, 3]) 
