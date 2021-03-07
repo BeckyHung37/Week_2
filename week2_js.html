@@ -56,11 +56,17 @@
                     return a-b
                 });
                 //如果要倒著算，就要寫var ans=InStock[InStock.length-1]*InStock[InStock.length-2]
-                var ans=InStock[2]*InStock[3];
-                console.log(ans);
+                var ans1=InStock[0]*InStock[1];
+                var ans2=InStock[InStock.length-1]*InStock[InStock.length-2]
+                if (ans1>ans2){
+                    console.log(ans1);
+                }else{
+                    console.log(ans2);
+                }
             }
             maxProduct([5, 20, 2, 6]); 
             maxProduct([10, -20, 0, 3]);
+            
         
         //Q4
             function twoSum(nums, target){
